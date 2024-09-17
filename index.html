@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="esp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juan Matile - Cortador de Jamón</title>
+
+    <style>
+      /* Estilo general del cuerpo (CSS) */
+      body {font-family: "Times New Roman", sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333;}
+
+      /* Reset básico para evitar inconsistencias entre navegadores (CSS) */
+      * {box-sizing: border-box;}
+
+      /* JUAN MATILE(CSS) */
+      header {background-color:#F0EAD6; color: #333; text-align: center; padding: 60px 20px;}
+      header h1 {font-size: 48px; margin: 0;}
+      header p {font-size: 20px; margin: 10px 0;}
+
+      /* Sección "Sobre mí" (CSS) */
+      section.about {padding: 25px 25px; text-align: center;}
+      section.about h2 {font-size: 36px; margin-bottom: 10px;}
+      section.about p {max-width: 800px; margin: auto; line-height: 1.6;}
+
+      /* FOTOS GALERÍA (CSS) */
+      section.portfolio {padding: 60px 20px; background-color: #F0EAD6; text-align: center;}
+      section.portfolio h2 {font-size: 36px; margin-bottom: 20px;}
+
+      /* Galería de imágenes del portafolio (CSS) */
+      section.portfolio .gallery {display: flex; justify-content: space-around; flex-wrap: wrap;}
+      section.portfolio .gallery div {margin: 10px; width: 30%; background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+      section.portfolio .gallery div img {width: 100%; height: 100%;}
+
+      /* Sección de Contacto (CSS) */
+      section.contact {width: 100vw; margin: 0%;  padding: 60px 0px; background-color: white; text-align: center;}
+      section.contact h2 {font-size: 36px; margin-bottom: 0px;}
+      section.contact p {max-width: 800px; margin: 0 auto; line-height: 1.6;}
+
+      /* ALL RIGHTS RESERVED (CSS) */ 
+      footer {background-color: #343434; color: white; text-align: center; padding: 20px;}
+      footer p {margin: 0;}
+
+      /* Estilos del menú de navegación (CSS) */
+      nav {background-color: #807d7d; color: white; text-align: center; padding: 15px;}
+      nav ul {list-style: none; margin: 0; padding: 0;}
+      nav ul li {display: inline;margin: 0 15px;}
+      nav ul li a {color: white; text-decoration: none; font-weight: bold;}
+      nav ul li a:hover {text-decoration: underline;}
+
+      /* Estilos para la sección de Origen del Jamón (CSS) */
+      .origen-jamon {max-width: 100%; margin: 0 auto; padding: 40px 20px;}
+
+      /* Estilo para la sección de Origen del Jamón */
+      .origen-jamon {max-width: 100%; margin: 0 auto; padding: 40px 20px;}
+
+      /* Estilo para los contenedores de cada tipo de jamón */
+      .tipo-jamon {display: flex; align-items: center; margin-bottom: 40px;}
+
+      /* Estilo para las imágenes de jamón */
+      .tipo-jamon img {
+        width: 250px; /* Todas las imágenes tendrán el mismo tamaño */
+        height: 550px; /* Mantiene la proporción de las imágenes */
+        margin-left: 75px; /* Añade espacio a la izquierda */
+        margin-right: 50px;
+      }
+
+      /* Estilo para el texto junto a cada imagen */
+      .texto-jamon {width: 70%; /* El texto ocupará el espacio restante */}
+      .texto-jamon h3 {font-size: 28px; margin-bottom: 10px;}
+      .texto-jamon p {font-size: 16px; line-height: 1.6;}
+    </style>
+  </head>
+
+  <body>
+    <!-- Navegación (HTML) -->
+    <!-- Este bloque de código es el menú de navegación de la página -->
+    <nav>
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#Una breve explicación de los origenes del Jamón">Una breve explicación de los origenes del Jamón </a></li>
+      </ul>
+    </nav>
+
+    <!-- Encabezado (HTML) -->
+    <header>
+      <h1>Juan Matile</h1>
+      <p>Maestro cortador de jamón</p>
+    </header>
+
+    <!-- Sección "Sobre mí" (HTML) -->
+<section id="about" class="about">
+  <div class="about-content">
+    <div class="text-container">
+      <h2>Pasión por el corte</h2><br/><br/>
+      <p>
+        En 2021 me saqué el certificado de cortador de jamón impulsado por mi
+        pasión por la cultura española y el arte del corte en
+        particular. Mi participación en eventos de alto nivel, como bodas de más
+        de 200 invitados, celebraciones privadas en restaurantes y en la sala
+        VIP del FC Barcelona, me han permitido adquirir gran experiencia, así
+        como perfeccionar el tipo y estilo de corte.
+      </p>
+    </div>
+    <img src="images/AAA.jpg" alt="Foto cortando jamón" class="about-image">
+  </div> 
+</section>
+
+  <style>
+  /* Sección "Sobre mí" con color de fondo */
+  section.about {background-color: white; padding: 50px 75px;}
+  .about-content {display: flex; justify-content: space-between; align-items: center; gap: 20px;}
+  .text-container {max-width: 65%; text-align: left;}
+  .about-image {width: 35%; height: 100%; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);}
+  @media (max-width: 768px) {
+    .about-content {flex-direction: column; align-items: center;}
+    .text-container, .about-image {width: 100%; text-align: center;}
+    .about-image {margin-top: 20px;}
+  }
+  </style>
+
+<!-- Estilos CSS -->
+<style>
+  /* Estilos para el contenedor principal */
+  .about-content {
+    display: flex; /* Flexbox para alinear texto e imagen en línea */
+    justify-content: space-between; /* Texto a la izquierda, imagen a la derecha */
+    align-items: center; /* Alinea el texto y la imagen al centro verticalmente */
+    gap: 20px; /* Espacio entre el texto y la imagen */
+  }
+
+  /* Estilos para el contenedor del texto */
+  .text-container {
+    max-width: 65%; /* El texto ocupa el 65% del espacio */
+    text-align: center; /* Centra el título y el párrafo */}
+
+  /* Estilos para el título h2 */
+  .text-container h2 {
+    font-size: 36px; /* Tamaño del título */
+    margin-bottom: 15px; /* Espacio debajo del título */}
+
+  /* Estilos para el párrafo */
+  .text-container p {
+    line-height: 1.6; /* Mejora la legibilidad del texto */}
+
+  /* Estilos para la imagen */
+  .about-image {
+    width: 25%; /* Imagen ocupa el 30% del espacio disponible */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para la imagen */
+  }
+
+  /* Diseño responsivo para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column; /* Coloca la imagen debajo del texto en pantallas pequeñas */
+      align-items: center; /* Centra el texto y la imagen */
+    }
+
+    .text-container, .about-image {
+      width: 100%; /* Texto e imagen ocupan el 100% del ancho */
+      text-align: center; /* Centra el texto */
+    }
+
+    .about-image {
+      margin-top: 20px; /* Añade espacio superior entre el texto y la imagen */
+    }
+  }
+</style>
+  
+    <!-- Sección Portafolio (HTML) -->
+    <section id="portfolio" class="portfolio">
+      <div class="gallery">
+        <div>
+          <img src="images/Foto boda2.jpg" alt="Project 1" />
+          <p>Barcelona, Cataluña</p>
+        </div>
+        <div>
+          <img src="images/foto juan2.jpg" alt="Project 2" />
+          <p>Ginebra, Suiza</p>
+        </div>
+        <div>
+          <img src="images/mesa jamón.jpg" alt="Project 3" />
+          <p>Logroño, La Rioja</p>
+        </div>
+      </div>
+    </section>
+
+      <!-- Estilos CSS -->
+      <style>
+        .gallery {display: flex; justify-content: space-around;}
+        .gallery div {width: 30%; text-align: center; display: flex; flex-direction: column; align-items: center;justify-content: flex-start;}
+        .gallery img {width: 100%; height: 250px; object-fit: cover; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        .gallery p {margin-top: 15px;}
+      </style>
+
+<hr style="width: 100%; border: none; border-bottom: 2px solid #fff; margin: 0 auto;">
+
+      <!-- Sección "Material" -->
+            <section id="Material" class="Material">
+              <h2>Mi material</h2>
+              <div class="material-content">
+                <!-- Primera imagen con texto -->
+                <div class="material-item">
+                  <img src="images/jamonero.png" alt="Material 1" class="material-image">
+                  <p>Jamonero - Buarfe <br/> 
+                    Modelo: Elite Plus Profesional Inoxidable Base Polietileno PE-500 Cabezal Giratorio</p>
+                </div>
+                
+                <!-- Segunda imagen con texto -->
+                <div class="material-item">
+                  <img src="images/cuchillos.png" alt="Material 2" class="material-image">
+                  <p>Set de Cuchillos - 3 Claveles <br/> 1 Cuchillo Jamonero, 1 Carnicero, 1 Deshuesador Corto y 1 Chaira + Maletín. <br/><br/>
+                
+                  </p>
+                </div>
+              </div>
+            </section>
+            
+
+            <!-- Estilos CSS -->
+            <style>
+              .Material {padding: 40px; background-color: #F0EAD6; text-align: center;}
+              .Material h2 {font-size: 36px; margin-bottom: 30px; color: #333;}
+              .material-content {display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-between;}
+              .material-item {display: flex; flex-direction: column; align-items: center; justify-content: center; width: 45%; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 15px; transition: transform 0.3s ease;}
+              .material-item:hover {transform: translateY(-10px);} /* Efecto de hover para la tarjeta */
+              .material-image-wrapper {margin-bottom: 15px; text-align: center;}
+              .material-image {width: 100px; height: auto; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);} /* Imagen redonda */
+              .material-text {text-align: left; background-color: #eaeaea; padding: 15px; border-radius: 10px; width: 100%;}
+              .material-text p {font-size: 16px; color: #555; line-height: 1.6;}
+              @media (min-width: 768px) {.material-item {flex-direction: row; justify-content: flex-start; align-items: center;} .material-image-wrapper {margin-right: 20px;} .material-image {width: 120px;}} 
+            </style>
+            
+            <hr style="width: 100%; border: none; border-bottom: 2px solid #fff; margin: 0 auto;">
+    <!-- Sección de Origen del jamón (HTML) -->
+
+    <section id="origen-jamon" class="origen-jamon"> 
+    <h2 style="text-align: center; font-size: 36px; margin-bottom: 20px;">Origen del jamón</h2>
+
+    <p style="text-align: center;">
+        Las bridas que llevan los jamones ibéricos, reguladas por el Real Decreto 4/2014, son clave para distinguir su calidad. Estas etiquetas no solo indican la pureza de la raza del cerdo, sino también su alimentación, ayudando a que sea fácil para el consumidor saber exactamente qué tipo de jamón está comprando. Además, garantizan que cada pieza cumpla con los estándares de autenticidad y trazabilidad, lo que da confianza de que el jamón ibérico que llega a la mesa es de calidad y origen garantizado.
+    </p> 
+    <br/>
+    <br/><br/>
+
+    <!-- Estilos CSS -->
+    <style>
+        
+        /* Sección Origen del jamón con fondo de imagen */
+        .origen-jamon {
+            width: 100%; /* Ensure it takes the full viewport width */
+            text-align: center;
+            background-image: url('images/dehesa.png'); /* Imagen de fondo */
+            background-size: cover; /* La imagen cubrirá todo el fondo */
+            background-position: center; /* Centra la imagen */
+            background-attachment: fixed; /* La imagen se mantiene fija al hacer scroll */
+            color: white; /* Cambia el color del texto a blanco para mejor legibilidad */
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</section>
+
+
+<br/><br/><br/>
+<!-- Primer tipo de jamón (HTML) -->
+<div class="tipo-jamon">
+<img
+src="images/etiqueta negra.png"
+ alt="Bellota 100% iberico"
+ class="imagen-jamon etiqueta-negra"
+ />
+        <div class="texto-jamon">
+          <h3>Jamón Ibérico</h3>
+          <p>
+            El jamón de bellota 100% ibérico proviene de cerdos de raza pura,
+            criados en libertad y alimentados principalmente con bellotas
+            durante la montanera, de octubre a marzo. Este proceso tradicional,
+            junto con la genética ibérica, da lugar a un jamón de sabor único,
+            con una infiltración de grasa que garantiza su jugosidad y textura
+            inigualable. El "pata negra" es el distintivo de calidad que destaca
+            su autenticidad, reservado únicamente para los cerdos 100% ibéricos
+            alimentados con bellota. <br /><br /><br />
+            <br />
+
+            <p style="text-align: center;">
+              <strong>Genetica del cerdo </strong> <br/><br/>
+              Madre 100% ibérica | Padre 100% ibérico
+            </p>  
+          </p>
+        </div>
+      </div>
+
+      <hr style="width: 85%; border: none; border-bottom: 1px solid #333; margin: 0 auto;"><br/><br/>
+     
+      <!-- Segundo tipo de jamón (HTML) -->
+      <div class="tipo-jamon">
+        <img
+          src="images/etiqueta roja.png"
+          alt="bellota iberico"
+          class="imagen-jamon"
+        />
+        <div class="texto-jamon">
+          <h3>Jamón de bellota 50% o 75% ibérico</h3>
+          <p>
+            El jamón de bellota 50% o 75% ibérico proviene de cerdos cruzados, con al menos uno de sus progenitores siendo 100% ibérico. Estos cerdos son alimentados con bellotas durante la montanera, lo que otorga al jamón su característico sabor y aroma intensos. Aunque no son 100% ibéricos, la infiltración de grasa y la textura suave hacen de este jamón una opción de alta calidad, destacándose por su jugosidad y su autenticidad en el proceso de elaboración tradicional.
+            <br /><br /><br />
+            <br />
+
+            <p style="text-align: center;">
+              <strong>Genética del cerdo</strong><br/><br/>
+              <strong>&nbsp;&nbsp;&nbsp;&nbsp;50%</strong> - Madre 100% ibérica <strong>|</strong> Padre de raza Duroc <br/>
+              <strong>&nbsp;75%</strong> - Madre 100% ibérica <strong>|</strong> Padre 50% ibérico 
+            </p>
+          </div>
+        </div>
+
+      <hr style="width: 85%; border: none; border-bottom: 1px solid #333; margin: 0 auto;"><br/><br/>
+      
+    
+      <!-- Tercer tipo de jamón (HTML) -->
+      <div class="tipo-jamon">
+        <img
+          src="images/etiqueta verde.png"
+          alt="Cebo de campo iberico"
+          class="imagen-jamon"
+        />
+        <div class="texto-jamon">
+          <h3>Jamón de cebo de campo 50%, 75% o 100% ibérico</h3>
+          <p>
+            El jamón de cebo de campo 50%, 75% o 100% ibérico proviene de cerdos criados en el campo, donde cada animal dispone de al menos 100 m² para moverse libremente. Su alimentación se basa en una combinación de piensos, pastos y hierbas naturales. Este estilo de vida al aire libre mejora la calidad de la carne, aportándole un sabor equilibrado y una buena infiltración de grasa. Aunque los cerdos 50% ibéricos son los más comunes, el jamón de cebo de campo destaca por ofrecer una excelente relación entre calidad y precio, manteniendo la autenticidad del proceso tradicional.
+            <br /><br /><br />
+            <br />
+
+ <p style="text-align: center;">
+   <strong>Genetica del cerdo </strong> <br/><br/>
+              <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50%</strong> - Madre 100% ibérica <strong>|</strong> Padre de raza Duroc <br/>
+              <strong>&nbsp;&nbsp;&nbsp;75%</strong> - Madre 100% ibérica <strong>|</strong> Padre 50% ibérico <br/>
+              <           strong>&nbsp;&nbsp;&nbsp;100%</strong> - Madre 100% ibérica <strong>|</strong> Padre 100% ibérico <br/>
+                         
+          </p>
+        </div>
+      </div>
+
+      <hr style="width: 85%; border: none; border-bottom: 1px solid #333; margin: 0 auto;"><br/><br/>
+
+      <!-- Cuarto tipo de jamón (HTML) -->
+      <div class="tipo-jamon">
+        <img
+          src="images/etiqueta blanca.png"
+          alt="Cebo iberico"
+          class="imagen-jamon"
+        />
+        <div class="texto-jamon">
+          <h3>Jamón de cebo 50%, 75% o 100% ibérico</h3>
+          <p>
+            El jamón de cebo 50%, 75% o 100% ibérico proviene de cerdos criados en granjas, donde su dieta se basa principalmente en piensos. Aunque los cerdos 50% ibéricos son los más comunes, esta categoría de jamón ofrece una excelente opción de entrada al mundo del ibérico. Su sabor suave y su textura equilibrada permiten disfrutar de la esencia del jamón ibérico a un precio más accesible, siendo una opción ideal para quienes buscan una experiencia de calidad sin comprometer su presupuesto.
+          
+            <p style="text-align: center;">
+              <strong>Genetica del cerdo </strong> <br/><br/>
+              <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50%</strong> - Madre 100% ibérica <strong>|</strong> Padre de raza Duroc <br/>
+              <strong>&nbsp;&nbsp;&nbsp;75%</strong> - Madre 100% ibérica <strong>|</strong> Padre 50% ibérico <br/>
+              <strong>&nbsp;&nbsp;&nbsp;100%</strong> - Madre 100% ibérica <strong>|</strong> Padre 100% ibérico <br/>
+          </p>
+        </div>
+      </div>
+      <hr style="width: 100%; border: none; border-bottom: 2px solid #333; margin: 0 auto;">
+    </section>
+
+   <!-- Sección de Mapa con fondo gris claro -->
+<section id="mapa" style="padding: 50px; background-color: #F0EAD6;"> <!-- Fondo gris claro -->
+  <h2 style="text-align: center; font-size: 36px; margin-bottom: 20px;">Mapa de Jamones con Denominación de Origen</h2> <br/>
+  
+  <p style="text-align: center;">
+    Según la web oficial del gobierno de España, las denominaciones de origen (DOP) son sellos de calidad que certifican productos vinculados a una región específica. Estos productos destacan por sus características y calidad, determinadas tanto por el entorno geográfico como por los factores naturales y humanos de la zona. Además, su producción, transformación y elaboración se llevan a cabo exclusivamente en esa área delimitada, de la cual toman su nombre.<br/><br/>
+  </p>
+
+  <!-- Contenedor que organiza la imagen arriba y los puntos abajo -->
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    
+    <!-- Imagen del mapa arriba -->
+    <div style="width: 100%; max-width: 800px; margin-bottom: 15px;">
+      <img src="images/MAPA.png" alt="Mapa de jamones con denominación de origen" style="width: 100%; height: auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-radius: 8px;">
+    </div>
+
+    <!-- Puntos de referencia abajo -->
+    <div style="width: 100%; max-width: 1200px;">
+      <div style="margin-bottom: 10px;">
+        <h3 style="margin-bottom: 5px;">DOP Guijuelo (Salamanca)</h3>
+        <p style="color: #555;">
+          Los jamones DOP Guijuelo, situados a más de 1.000 metros de altitud, se curan en un clima frío y seco, lo que permite un proceso más prolongado con menos uso de sal, resultando en un sabor más dulce. Su textura es suave y jugosa, gracias a la notable infiltración de grasa intramuscular.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 10px;">
+        <h3 style="margin-bottom: 5px;">DOP Dehesa de Extremadura (Extremadura)</h3>
+        <p style="color: #555;">
+          Los jamones de la DOP Dehesa de Extremadura se destacan por su forma alargada y estilizada, con un color al corte que varía del rosa al rojo púrpura. Tienen un sabor delicado y una textura suave, gracias a la infiltración de grasa en la carne. Se producen en las dehesas de encinas y alcornoques de Cáceres y Badajoz, donde la alimentación de los cerdos con bellotas aporta un sabor y aroma característicos.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 10px;">
+        <h3 style="margin-bottom: 5px;">DOP Los Pedroches (Córdoba)</h3>
+        <p style="color: #555;">
+          El jamón de la DOP Valle de Los Pedroches se distingue por su sabor intenso y ligeramente dulce, con una textura firme y jugosa, potenciada por la excelente calidad de su grasa. Esta región, en el norte de Córdoba, alberga una de las mayores dehesas de encinas del mundo, ofreciendo un entorno ideal para la alimentación natural de los cerdos ibéricos. El microclima cálido y las planicies favorecen una curación perfecta, haciendo de estos jamones una auténtica joya gastronómica.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 10px;">
+        <h3 style="margin-bottom: 5px;">DOP Jabugo (Huelva)</h3>
+        <p style="color: #555;">
+          El jamón de la DOP Jabugo se destaca por su sabor profundo y complejo, con un retrogusto persistente y una grasa que se derrite fácilmente, liberando un aroma único. Criados en dehesas ricas en encinas y alcornoques, los cerdos ibéricos se alimentan principalmente de bellotas, lo que contribuye a su calidad excepcional. El clima de Jabugo, con inviernos fríos y veranos suaves, es perfecto para la curación natural del jamón, y las dehesas de esta región, junto a zonas de Extremadura y Andalucía, proporcionan un entorno óptimo para el desarrollo de estos animales.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<hr style="width: 100%; border: none; border-bottom: 2px solid #333; margin: 0 auto;">
+
+<!-- Sección de Contacto (HTML) -->
+<section id="contact" class="contact">
+  <h2>Contacto</h2>
+  <p>Si desea más información o contratar mis servicios, no dude en ponerse en contacto conmigo a través de:</p> 
+  <p class="center-contact">
+      <a href="mailto:juan.matile@gmail.com">juan.matile@gmail.com</a> | <a href="tel:+34620264287">(+34) 620 264 287</a>
+  </p>
+</section>
+
+<!-- Pie de página (HTML) colocado al final de la página -->
+<footer>
+  <p>&copy; 2024 Juan Matile. All Rights Reserved.</p>
+</footer>
